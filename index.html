@@ -1,24 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-        <div class="result-box">
-            <p id="result">0 / 0</p>
-        </div>
-
-        <div class="container">
-            <div class="box" id="rock"></div>
-            <div class="box" id="paper"></div>
-            <div class="box" id="scissors"></div>
-        </div>
-    </main>
-    <script src="game.js"></script>
+  <div class="container">
+    <!-- Header -->
+    <h2 class="text-center">Rock Paper Scissors Game</h2>
+    <div class="blue-box">
+      <p>Choose Your Icon</p>
+    </div>
+    <div class="row">
+      <div class="w-33">
+        <i class="fa icon fa-hand-rock" id="rock"></i>
+      </div>
+      <div class="w-33">
+        <i class="fa icon fa-hand-scissors" id="paper"></i>
+      </div>
+      <div class="w-33">
+        <i class="fa icon fa-hand-paper" id="scissors"></i>
+      </div>
+    </div>
+    <!-- Counts Box -->
+    <div class="counts">
+      <h3 class="counts-content">0 / 0</h3>
+    </div>
+  </div>
+  <!-- Modal  -->
+  <div class="modal">
+    <div class="modal-box">
+      <button class="close-btn">&times;</button>
+      <h2 class="modal-title"></h2>
+      <br>
+      <span class="modal-content"></span>
+    </div>
+  </div>
+  <script src="script.js" charset="utf-8"></script>
 </body>
 </html>

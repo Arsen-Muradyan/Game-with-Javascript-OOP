@@ -51,10 +51,10 @@ function play(e) {
     var random = Math.floor(Math.random() * 3);
     if (selectObj[selectedCharacter] == random) {
       win++;
-      show('You Draw', `You Choose ${selectedCharacter} and Computer Choose ${cpuObj[random]}`, `${win} / ${levels}`)
+      show('You Win', `You Choose ${selectedCharacter} and Computer Choose ${cpuObj[random]}`, `${win} / ${levels}`)
       titleField[0].style.color = 'blue';
     } else if (selectedCharacter == cpuObj[random]) {
-      show('Equal', `You Choose ${selectedCharacter} and Computer also Choose ${cpuObj[random]}`, `${win} / ${levels}`)
+      show('You Draw', `You Choose ${selectedCharacter} and Computer also Choose ${cpuObj[random]}`, `${win} / ${levels}`)
       titleField[0].style.color = 'black'
     }
     else {

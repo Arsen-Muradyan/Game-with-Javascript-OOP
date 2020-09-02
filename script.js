@@ -1,4 +1,3 @@
-//Declare DOM Elements
 var characters = document.getElementsByClassName('icon');
 var modal = document.getElementsByClassName('modal')
 var titleField = document.getElementsByClassName('modal-title')
@@ -9,17 +8,19 @@ var counts = document.getElementsByClassName('counts-content')
 for (var i = 0; i < characters.length; i++ ) {
   characters[i].addEventListener('click', play)
 }
-
 closeBtn[0].addEventListener('click', closeModal)
+
 // Winner Count and Levels Count
 var win = 0;
 var levels = 0;
+
 // Open Modal Function
 function show(title, body) {
   modal[0].style.display = 'block';
   titleField[0].innerHTML = title;
   modalContent[0].innerHTML = body;
 }
+
 // Close Modal Function
 function closeModal() {
   modal[0].style.display = 'none'
@@ -29,6 +30,7 @@ window.onclick = function (e) {
     closeModal();
   }
 }
+
 // Icons event
 function play(e) {
   var a = e.target.className.replace('fa icon fa-hand-', '');
